@@ -18,9 +18,18 @@
   --color-secondary-grayish-blue: hsl(229, 6%, 66%);
   --color-secondary-light-grey: hsl(0, 0%, 98%);
 }
+// Media queries
+$bp-big: 75em; //bp at 1200px
+$bp-small: 44em; //bp at 704px
+$bp-tiny: 26.5em; //bp at 424px
+
 html {
   // Rest 1rem = 10px;
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-tiny) {
+    font-size: 55%;
+  }
 }
 
 body {
@@ -28,4 +37,21 @@ body {
   background-color: var(--color-secondary-light-grey);
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
+  color: var(--color-secondary-grayish-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 0 5em;
+  max-width: 140rem;
+  margin: auto 0;
+  @media only screen and (max-width: $bp-big) {
+    padding: 2em 5em;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 2em;
+  }
 }
