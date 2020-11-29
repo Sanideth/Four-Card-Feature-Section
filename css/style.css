@@ -5,9 +5,19 @@
   padding: 0;
   box-sizing: border-box; }
 
+:root {
+  --color-primary-red: hsl(0, 78%, 62%);
+  --color-primary-cyan: hsl(180, 62%, 55%);
+  --color-primary-orange: hsl(34, 97%, 64%);
+  --color-primary-blue: hsl(212, 86%, 64%);
+  --color-secondary-dark-blue: hsl(234, 12%, 34%);
+  --color-secondary-grayish-blue: hsl(229, 6%, 66%);
+  --color-secondary-light-grey: hsl(0, 0%, 98%); }
+
 html {
   font-size: 62.5%; }
 
 body {
   height: 100vh;
-  background-color: #000; }
+  background-color: var(--color-secondary-light-grey);
+  font-size: 1.5rem; }
